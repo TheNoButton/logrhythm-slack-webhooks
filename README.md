@@ -29,6 +29,10 @@ These are some examples/quick guide on how to send Slack Webhooks from LogRhythm
 #### suspicious-ip-outbound.ps1  
 
 ![](http://i.imgur.com/gsZt3ao.png)
+
+#### privileged-user-group-changes.ps1
+
+![](http://i.imgur.com/GAeGh0p.png)
   
 ### Credit
 [jgigler/Powershell.Slack](https://github.com/jgigler/Powershell.Slack)

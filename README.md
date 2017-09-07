@@ -2,7 +2,7 @@
 These are some examples/quick guide on how to send Slack Webhooks from LogRhythm AIE alarms.
 
 ### Steps
-1. Add a webhook to your Slack team.
+1. Add a webhook to your Slack team.  
 [NOT SHOWN]
 2. Create your AIE alarm with fields that you want to pass to your webhook.  
 [NOT SHOWN]
@@ -37,4 +37,4 @@ These are some examples/quick guide on how to send Slack Webhooks from LogRhythm
 ![](http://i.imgur.com/GAeGh0p.png)
   
 ### Credit
-[jgigler/Powershell.Slack](https://github.com/jgigler/Powershell.Slack)
+v

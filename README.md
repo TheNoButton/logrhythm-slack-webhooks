@@ -7,12 +7,22 @@ These are some examples/quick guide on how to send Slack Webhooks from LogRhythm
 3. Create the actions.xml manifest with the same parameters/fields. [actions.xml]
 4. Create your SmartResponse Plugin using the powershell script and manifest. [NOT SHOWN]
 5. Set your SmartResponse as an action to your AIE alarm, mapping the correct parameters:  
-![](http://i.imgur.com/mAakBz7.png)
+
+![](http://i.imgur.com/04swGjG.png)
+
 6. Trigger your alarm, observe the webhook:  
+
 ![](http://i.imgur.com/OAlGKxa.png)
 
 ### Better Examples
 auth-failure.ps1  
+http://i.imgur.com/rzeKFqA.png
+  
+suspicious-ip-inbound.ps1  
+http://i.imgur.com/HUXpWtV.png
 
+suspicious-ip-outbound.ps1  
+http://i.imgur.com/gsZt3ao.png
+  
 ### Credit
 [jgigler/Powershell.Slack](https://github.com/jgigler/Powershell.Slack)

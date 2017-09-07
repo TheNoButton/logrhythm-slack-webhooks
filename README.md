@@ -2,19 +2,21 @@
 These are some examples/quick guide on how to send Slack Webhooks from LogRhythm AIE alarms.
 
 ### Steps
-1. Create your AIE alarm with fields that you want to pass to your webhook.  
+1. Add a webhook to your Slack team.
 [NOT SHOWN]
-2. Create a powershell script accepting the fields as parameters.  
+2. Create your AIE alarm with fields that you want to pass to your webhook.  
+[NOT SHOWN]
+3. Create a powershell script accepting the fields as parameters.  
 [basic.ps1]
-3. Create the actions.xml manifest with the same parameters/fields.  
+4. Create the actions.xml manifest with the same parameters/fields.  
 [actions.xml]
-4. Create your SmartResponse Plugin using the powershell script and manifest.  
+5. Create your SmartResponse Plugin using the powershell script and manifest.  
 [NOT SHOWN]
-5. Set your SmartResponse as an action to your AIE alarm, mapping the correct parameters:  
+6. Set your SmartResponse as an action to your AIE alarm, mapping the correct parameters:  
 
 	![](http://i.imgur.com/04swGjG.png)
 
-6. Trigger your alarm, observe the webhook:  
+7. Trigger your alarm, observe the webhook:  
 
 	![](http://i.imgur.com/OAlGKxa.png)
 

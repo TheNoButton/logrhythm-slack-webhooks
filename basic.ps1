@@ -17,6 +17,7 @@ $WebhookURL = "https://hooks.slack.com/services/XXXXXXXXXXXXXXXXX"
 $Url = "https://YOUR_SMARTCONSOLE_LINK/alarms/" + $AlarmId
 <####################>
 
+#Set webhook payload
 $MyFields = @(
     @{
         title = $AlarmRuleName
@@ -30,6 +31,7 @@ $MyFields = @(
     }
 )
 
+#Send Webhook
 . $ref
 $notification = New-SlackRichNotification -Fallback $AlarmRuleName -AuthorName $AlarmDate -Fields $MyFields
 Send-SlackNotification -Url $WebhookURL -Notification $notification

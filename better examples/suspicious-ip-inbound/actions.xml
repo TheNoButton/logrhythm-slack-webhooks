@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<remv1:Remediation-Plugin xmlns:remv1="RemediationVersion1.xsd" Name="Slack Webhook - Suspicious IP Inbound">
+  <remv1:Action Name="Send Webhook - Suspicious IP Inbound" Command="powershell.exe">
+    <remv1:ConstantParameter Name="Script" Switch="-file PATH_TO_FILE\suspicious-ip-inbound.ps1" Order="1" />
+    <remv1:StringParameter Name="AlarmId" Switch="" Order="2"> <remv1:DefaultInput> <remv1:AlarmId /> </remv1:DefaultInput> </remv1:StringParameter>
+    <remv1:StringParameter Name="AlarmDate" Switch="" Order="3"> <remv1:DefaultInput> <remv1:AlarmDate> <remv1:TimeFormat TimeZone="Eastern Standard Time" FormattingString="MM-dd-yyyy hh:mm:ss" /> </remv1:AlarmDate> </remv1:DefaultInput> </remv1:StringParameter>
+    <remv1:StringParameter Name="AlarmRuleName" Switch="" Order="4"> <remv1:DefaultInput> <remv1:AlarmRuleName /> </remv1:DefaultInput> </remv1:StringParameter>
+    <remv1:StringParameter Name="Subject" Switch="" Order="5"> <remv1:DefaultInput> <remv1:Subject /> </remv1:DefaultInput> </remv1:StringParameter>
+    <remv1:StringParameter Name="Sender" Switch="" Order="6"> <remv1:DefaultInput> <remv1:Sender /> </remv1:DefaultInput> </remv1:StringParameter>
+    <remv1:StringParameter Name="Protocol" Switch="" Order="7"> <remv1:DefaultInput> <remv1:Protocol /> </remv1:DefaultInput> </remv1:StringParameter>
+    <remv1:StringParameter Name="DPort" Switch="" Order="8"> <remv1:DefaultInput> <remv1:DPort /> </remv1:DefaultInput> </remv1:StringParameter>
+	<remv1:StringParameter Name="DLocationCountry" Switch="" Order="8"> <remv1:DefaultInput> <remv1:DLocationCountry /> </remv1:DefaultInput> </remv1:StringParameter>
+    <remv1:StringParameter Name="DIP" Switch="" Order="10"> <remv1:DefaultInput> <remv1:DIP /> </remv1:DefaultInput> </remv1:StringParameter>
+    <remv1:StringParameter Name="SIP" Switch="" Order="11"> <remv1:DefaultInput> <remv1:SIP /> </remv1:DefaultInput> </remv1:StringParameter>
+    <remv1:StringParameter Name="KnownService" Switch="" Order="12"> <remv1:DefaultInput> <remv1:KnownService /> </remv1:DefaultInput> </remv1:StringParameter>
+    <remv1:StringParameter Name="SLocationCountry" Switch="" Order="13"> <remv1:DefaultInput> <remv1:SLocationCountry /> </remv1:DefaultInput> </remv1:StringParameter>
+    <remv1:StringParameter Name="MPERule" Switch="" Order="14"> <remv1:DefaultInput> <remv1:MPERule /> </remv1:DefaultInput> </remv1:StringParameter>
+    <remv1:StringParameter Name="Object" Switch="" Order="15"> <remv1:DefaultInput> <remv1:Object /> </remv1:DefaultInput> </remv1:StringParameter>
+  </remv1:Action>
+</remv1:Remediation-Plugin>

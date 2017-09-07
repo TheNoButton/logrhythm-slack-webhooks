@@ -16,13 +16,13 @@ These are some examples/quick guide on how to send Slack Webhooks from LogRhythm
 
 ### Better Examples
 auth-failure.ps1  
-http://i.imgur.com/rzeKFqA.png
+![](http://i.imgur.com/rzeKFqA.png)
   
 suspicious-ip-inbound.ps1  
-http://i.imgur.com/HUXpWtV.png
+![](http://i.imgur.com/HUXpWtV.png)
 
 suspicious-ip-outbound.ps1  
-http://i.imgur.com/gsZt3ao.png
+![](http://i.imgur.com/gsZt3ao.png)
   
 ### Credit
 [jgigler/Powershell.Slack](https://github.com/jgigler/Powershell.Slack)

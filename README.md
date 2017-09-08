@@ -3,15 +3,15 @@ These are some examples/quick guide on how to send Slack Webhooks from LogRhythm
 
 ### Steps
 1. Add a webhook to your Slack team.  
-[NOT SHOWN]
+[ NOT SHOWN ]
 2. Create your AIE alarm with fields that you want to pass to your webhook.  
-[NOT SHOWN]
+[ NOT SHOWN ]
 3. Create a powershell script accepting the fields as parameters.  
-[basic.ps1]
+[ [basic.ps1](https://github.com/WTFender/logrhythm-slack-webhooks/blob/master/basic.ps1) ]
 4. Create the actions.xml manifest with the same parameters/fields.  
-[actions.xml]
+[ [actions.xml](https://github.com/WTFender/logrhythm-slack-webhooks/blob/master/actions.xml) ]
 5. Create your SmartResponse Plugin using the powershell script and manifest.  
-[NOT SHOWN]
+[ NOT SHOWN ]
 6. Set your SmartResponse as an action to your AIE alarm, mapping the correct parameters:  
 
 	![](http://i.imgur.com/04swGjG.png)
@@ -21,20 +21,20 @@ These are some examples/quick guide on how to send Slack Webhooks from LogRhythm
 	![](http://i.imgur.com/OAlGKxa.png)
 
 ### Better Examples
-#### auth-failure.ps1  
+#### [auth-failure.ps1](https://github.com/WTFender/logrhythm-slack-webhooks/blob/master/better%20examples/auth-failure/auth-failure.ps1)  
 ![](http://i.imgur.com/rzeKFqA.png)
   
-#### suspicious-ip-inbound.ps1  
+#### [suspicious-ip-inbound.ps1](https://github.com/WTFender/logrhythm-slack-webhooks/blob/master/better%20examples/suspicious-ip-inbound/suspicious-ip-inbound.ps1)  
 
 ![](http://i.imgur.com/z2ZHs8o.png)
 
-#### suspicious-ip-outbound.ps1  
+#### [suspicious-ip-outbound.ps1](https://github.com/WTFender/logrhythm-slack-webhooks/blob/master/better%20examples/suspicious-ip-outbound/suspicious-ip-outbound.ps1)  
 
 ![](http://i.imgur.com/gsZt3ao.png)
 
-#### privileged-user-group-changes.ps1
+#### [privileged-user-group-change.ps1](https://github.com/WTFender/logrhythm-slack-webhooks/blob/master/better%20examples/privileged-user-group-change/privileged-user-group-change.ps1)  
 
 ![](http://i.imgur.com/GAeGh0p.png)
   
 ### Credit
-v
+[jgigler/Powershell.Slack](https://github.com/jgigler/Powershell.Slack)
